@@ -19,18 +19,16 @@
         <h1>Corey Ipsum Generator</h1>
       </div>
     </div>
-    <!-- slider for how many paragraphs -->
     <div class="row">
       <div class="two columns">
-        <label for="paragraphs">Paragraphs</label>
-        <input type="range" min="1" max="10" value="1" class="slider" id="paragraphs">
+        <label for="sentences">Sentences</label>
+        <input type="range" min="1" max="10" value="1" class="slider" id="sentences">
+        <input type="number" min="1" max="10" value="1" id="number_of_sent" />
       </div>
-      <!-- button to generate text  -->
       <div class="two columns">
         <button id="generate">Generate</button>
       </div>
     </div>
- <!--container for generated text -->
     <div class="row">
       <div class="twelve columns">
         <p id="ipsum_text"></p>
