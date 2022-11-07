@@ -448,7 +448,7 @@ let coreyText =
         "without"
     ],
         
-    "corey words": [    
+    "corey": [    
         "works on my machine",
         "Ian did 80 percent",
         "told me to do it",
