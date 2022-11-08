@@ -23,7 +23,7 @@ numOfSentRange.addEventListener("input", syncSentNumbers);
 //get a noun, a verb, another noun, a preposition and a corey word from coreyText and add push to an array
 function getSentences() {
     let sentences = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         let sentence = [];
         sentence.push(coreyText.nouns[Math.floor(Math.random() * coreyText.nouns.length)]);
         sentence.push(coreyText.verbs[Math.floor(Math.random() * coreyText.verbs.length)]);

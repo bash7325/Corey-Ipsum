@@ -533,7 +533,11 @@ let coreyText =
         "Rocket League",
         "Demo Benny",
         "Demo Ian",
-        "Demo Butters"
+        "Demo Butters",
+        "Mo Bettah's",
+        "Taco Bell",
+        "Empire Chinese",
+        "Subway"
         ]
 }
 
