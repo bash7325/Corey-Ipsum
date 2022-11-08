@@ -16,8 +16,10 @@ function syncSentNumbers(e) {
     numOfSentRange.value = value;
   }
 
+//sync the slider with the text box next to it
 numOfSent.addEventListener("input", syncSentNumbers);
 numOfSentRange.addEventListener("input", syncSentNumbers);
+
 //get a noun, a verb, another noun, a preposition and a corey word from coreyText and add push to an array
 function getSentences() {
     let sentences = [];

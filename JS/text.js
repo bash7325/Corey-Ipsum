@@ -527,7 +527,13 @@ let coreyText =
         "sneldon",
         "fix butters mistake",
         "fire Benny",
-        "fired"
+        "fired",
+        "Ian buy me more monitors",
+        "Ian buy me a new computer",
+        "Rocket League",
+        "Demo Benny",
+        "Demo Ian",
+        "Demo Butters"
         ]
 }
 
