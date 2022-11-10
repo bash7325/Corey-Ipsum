@@ -493,11 +493,11 @@ let coreyText =
         "told me to do it",
         "Cheney worked on it first",
         "Chad taught me wrong",
-        "i was told they wanted it",
+        "I was told they wanted it",
         "Benny did it",
         "not my fault",
         "probably your fault",
-        "just do what i’m told",
+        "just do what I’m told",
         "didn’t have enough time",
         "fault",
         "blame",
@@ -505,12 +505,12 @@ let coreyText =
         "excuses",
         "just started blasting",
         "got dunked on",
-        "i’m better at sql",
+        "I’m better at sql",
         "someone else wrote it",
         "your fault",
         "what did i do",
         "didn’t do anything wrong",
-        "looked fine when i had it",
+        "looked fine when I had it",
         "complaint",
         "attribution",
         "accusation",
@@ -537,7 +537,9 @@ let coreyText =
         "Mo Bettah's",
         "Taco Bell",
         "Empire Chinese",
-        "Subway"
+        "Subway",
+        "CSS Queen",
+        "Sheldon fired me"
         ]
 }
 
