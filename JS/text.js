@@ -539,7 +539,8 @@ let coreyText =
         "Empire Chinese",
         "Subway",
         "CSS Queen",
-        "Sheldon fired me"
+        "Sheldon fired me",
+        "didn't invite Ian to lunch"
         ]
 }
 
