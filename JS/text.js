@@ -531,16 +531,18 @@ let coreyText =
         "Ian buy me more monitors",
         "Ian buy me a new computer",
         "Rocket League",
-        "Demo Benny",
-        "Demo Ian",
-        "Demo Butters",
+        "demo Benny",
+        "demo Ian",
+        "demo Butters",
         "Mo Bettah's",
         "Taco Bell",
         "Empire Chinese",
         "Subway",
         "CSS Queen",
         "Sheldon fired me",
-        "didn't invite Ian to lunch"
+        "didn't invite Ian to lunch",
+        "gushers",
+        "thinks Yoohoo is gross"
         ]
 }
 
