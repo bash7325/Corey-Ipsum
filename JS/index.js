@@ -1,8 +1,10 @@
 
 const text = document.querySelector('#ipsum_text');
 const btn = document.querySelector('#generate');
+const copyBtn = document.querySelector('#copy')
 const numOfSent = document.getElementById("number_of_sent");
 const numOfSentRange = document.getElementById("sentences");
+const copy = document.getElementById('copy');
 
 //get the value from the slider
 function getSliderValue() {
@@ -52,5 +54,17 @@ function createSentences() {
 //on click of btn createSentences
 btn.addEventListener('click', function () {
     text.textContent = createSentences();
+    document.getElementById('copy').style.display = 'block';
+    copy.textContent = 'Copy';
 })
 
+//when the copy button is clicked, copy text to clipboard
+function copyText() {
+    const copyText = document.getElementById('ipsum_text').innerText;
+    navigator.clipboard.writeText(copyText)
+    copy.textContent = 'Copied!';
+}
+
+copyBtn.addEventListener('click', function() {
+    copyText();
+})
