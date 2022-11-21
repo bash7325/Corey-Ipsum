@@ -28,6 +28,7 @@ function getSentences() {
     for (let i = 0; i < 6; i++) {
         let sentence = [];
         sentence.push(coreyText.nouns[Math.floor(Math.random() * coreyText.nouns.length)]);
+        sentence.push(coreyText.corey[Math.floor(Math.random() * coreyText.corey.length)]);
         sentence.push(coreyText.verbs[Math.floor(Math.random() * coreyText.verbs.length)]);
         sentence.push(coreyText.conjunctions[Math.floor(Math.random() * coreyText.conjunctions.length)]);
         sentence.push(coreyText.nouns[Math.floor(Math.random() * coreyText.nouns.length)]);
