@@ -542,7 +542,8 @@ let coreyText =
         "Sheldon fired me",
         "didn't invite Ian to lunch",
         "gushers",
-        "thinks Yoohoo is gross"
+        "thinks Yoohoo is gross",
+        "oh bother"
         ]
 }
 
