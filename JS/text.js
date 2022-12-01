@@ -543,7 +543,9 @@ let coreyText =
         "didn't invite Ian to lunch",
         "gushers",
         "thinks Yoohoo is gross",
-        "oh bother"
+        "oh bother",
+        "gushers",
+        "problem for future Corey"
         ]
 }
 
