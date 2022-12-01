@@ -524,7 +524,7 @@ let coreyText =
         "Megan Fox",
         "parking close to Ian",
         "oh bother",
-        "sneldon",
+        "Sneldon",
         "fix butters mistake",
         "fire Benny",
         "fired",
@@ -538,14 +538,16 @@ let coreyText =
         "Taco Bell",
         "Empire Chinese",
         "Subway",
-        "CSS Queen",
+        "CSS queen",
         "Sheldon fired me",
         "didn't invite Ian to lunch",
         "gushers",
         "thinks Yoohoo is gross",
         "oh bother",
         "gushers",
-        "problem for future Corey"
+        "problem for future Corey",
+        "it's probably like that everywhere",
+        "Ian's mom"
         ]
 }
 
