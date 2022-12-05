@@ -402,6 +402,21 @@ h1 {
   display: none;
 }
 
+#dark_mode {
+  background-color: #333;
+  color: #fff;
+}
+
+  /* when dark mode button is clicked switch to a dark theme */
+.dark_mode {
+  background-color: #333;
+  color: #fff;
+}
+
+input {
+  color: rgb(0, 0, 0) !important;
+}
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*

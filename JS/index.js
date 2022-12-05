@@ -5,6 +5,7 @@ const copyBtn = document.querySelector('#copy')
 const numOfSent = document.getElementById("number_of_sent");
 const numOfSentRange = document.getElementById("sentences");
 const copy = document.getElementById('copy');
+const darkMode = document.querySelector('#dark_mode');
 
 //get the value from the slider
 function getSliderValue() {
@@ -74,4 +75,16 @@ function copyText() {
 
 copyBtn.addEventListener('click', function() {
     copyText();
+})
+
+//onclick of #dark_mode button add class .dark_mode
+darkMode.addEventListener('click', function () {
+    document.body.classList.toggle('dark_mode');
+    // and change the button color to light
+    if (darkMode.textContent === 'Dark Mode') {
+        darkMode.textContent = 'Light Mode';
+    }
+    else {
+        darkMode.textContent = 'Dark Mode';
+    }
 })
