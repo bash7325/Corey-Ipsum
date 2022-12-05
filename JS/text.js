@@ -113,8 +113,15 @@ let coreyText =
         "lake",
         "river",
         "mountain",
-        "hill"
-
+        "hill",
+        "Ian",
+        "Chad",
+        "Sheldon",
+        "Meg",
+        "Benny",
+        "Ashby",
+        "Jake",
+        "Abe"
     ],
     "verbs": [
         "run",
@@ -484,7 +491,9 @@ let coreyText =
         "as",
         "because",
         "before",
-        "even if"
+        "even if",
+        "for example",
+        "for this purpose"
     ],
         
     "corey": [    
@@ -547,7 +556,9 @@ let coreyText =
         "gushers",
         "problem for future Corey",
         "it's probably like that everywhere",
-        "Ian's mom"
+        "Ian's mom",
+        "Meg",
+        "I only walk when it's 72-79 degrees outside"
         ]
 }
 
