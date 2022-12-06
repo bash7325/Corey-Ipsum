@@ -6,6 +6,8 @@ const numOfSent = document.getElementById("number_of_sent");
 const numOfSentRange = document.getElementById("sentences");
 const copy = document.getElementById('copy');
 const darkMode = document.querySelector('#dark_mode');
+var img = document.createElement("img");
+img.src = "images/corey.png";
 
 //get the value from the slider
 function getSliderValue() {
@@ -64,6 +66,7 @@ btn.addEventListener('click', function () {
     text.textContent = createSentences();
     document.getElementById('copy').style.display = 'block';
     copy.textContent = 'Copy';
+    document.body.appendChild(img);
 })
 
 //when the copy button is clicked, copy text to clipboard
@@ -88,3 +91,4 @@ darkMode.addEventListener('click', function () {
         darkMode.textContent = 'Dark Mode';
     }
 })
+
