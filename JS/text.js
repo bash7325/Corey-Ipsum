@@ -510,7 +510,7 @@ let coreyText =
         "didn’t have enough time",
         "fault",
         "blame",
-        "literally copied from chad",
+        "literally copied from Chad",
         "excuses",
         "just started blasting",
         "got dunked on",
