@@ -558,7 +558,23 @@ let coreyText =
         "it's probably like that everywhere",
         "Ian's mom",
         "Meg",
-        "I only walk when it's 72-79 degrees outside"
+        "I only walk when it's 72-79 degrees outside",
+        "did you try fixing it",
+        "Colleen better buy me redbull",
+        "everyone's mean to me for no reason",
+        "cash me outside",
+        "self-inflicted",
+        "copy-paste",
+        "everlast",
+        "eeyore",
+        "Benny didn't QC good enough",
+        "inculpate",
+        "point the finger",
+        "i don't know",
+        "not me",
+        "someone else's fault",
+        "blame Cheney",
+        "web dev 0.5"
         ]
 }
 
