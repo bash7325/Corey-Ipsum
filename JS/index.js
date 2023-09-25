@@ -9,6 +9,7 @@ const container = document.querySelector('.container');
 const darkMode = document.querySelector('#dark_mode');
 var img = document.createElement("img");
 img.src = "images/corey.png";
+img.className  = "corey_img";
 
 //get the value from the slider
 function getSliderValue() {
