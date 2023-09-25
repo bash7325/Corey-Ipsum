@@ -5,6 +5,7 @@ const copyBtn = document.querySelector('#copy')
 const numOfSent = document.getElementById("number_of_sent");
 const numOfSentRange = document.getElementById("sentences");
 const copy = document.getElementById('copy');
+const container = document.querySelector('.container');
 const darkMode = document.querySelector('#dark_mode');
 var img = document.createElement("img");
 img.src = "images/corey.png";
@@ -61,13 +62,16 @@ function createSentences() {
     return ipsumText;
 }
 
-//on click of btn createSentences
-btn.addEventListener('click', function () {
+//function for generate button
+function generateBtn() {
     text.textContent = createSentences();
     document.getElementById('copy').style.display = 'block';
     copy.textContent = 'Copy';
-    document.body.appendChild(img);
-})
+    container.appendChild(img);
+}
+
+//on click of btn createSentences
+btn.addEventListener('click', generateBtn)
 
 //when the copy button is clicked, copy text to clipboard
 function copyText() {
