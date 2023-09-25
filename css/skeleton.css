@@ -444,6 +444,24 @@ nav a:hover {
   background-color: #111;
 }
 
+.corey_img{
+  animation: bounceRotate 5s linear infinite;
+}
+
+/* Animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+@keyframes bounceRotate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(200px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
