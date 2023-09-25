@@ -449,8 +449,8 @@ nav a:hover {
 }
 
 /* Animations
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
 @keyframes bounceRotate {
   0% {
     transform: translateX(0) rotate(0deg);
