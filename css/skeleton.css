@@ -456,7 +456,7 @@ nav a:hover {
     transform: translateX(0) rotate(0deg);
   }
   50% {
-    transform: translateX(200px) rotate(180deg);
+    transform: translateX(500px) rotate(180deg);
   }
   100% {
     transform: translateX(0) rotate(360deg);
