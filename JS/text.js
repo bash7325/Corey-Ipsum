@@ -495,6 +495,58 @@ let coreyText =
         "for example",
         "for this purpose"
     ],
+
+    "interjections": [
+        "Wow",
+        "Oh",
+        "Oops",
+        "Yikes",
+        "Hey",
+        "Hooray",
+        "Darn",
+        "Ugh",
+        "Phew",
+        "Ouch",
+        "Gee",
+        "Aha",
+        "Bravo",
+        "Eek",
+        "Ah",
+        "Hmm"
+      ],
+
+      "determiners": [
+        "the",
+        "a",
+        "an",
+        "this",
+        "that",
+        "these",
+        "those",
+        "my",
+        "your",
+        "his",
+        "her",
+        "its",
+        "our",
+        "their",
+        "some",
+        "any",
+        "each",
+        "every",
+        "all",
+        "no",
+        "neither",
+        "either",
+        "both",
+        "several",
+        "many",
+        "few",
+        "more",
+        "most",
+        "much",
+        "little"
+      ],
         
     "corey": [    
         "works on my machine",
@@ -574,7 +626,9 @@ let coreyText =
         "not me",
         "someone else's fault",
         "blame Cheney",
-        "web dev 0.5"
+        "web dev 0.5",
+        "princess Benny",
+        "taking the family to Chili's"
         ]
 }
 
