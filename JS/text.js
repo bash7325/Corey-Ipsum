@@ -497,22 +497,22 @@ let coreyText =
     ],
 
     "interjections": [
-        "Wow",
-        "Oh",
-        "Oops",
-        "Yikes",
-        "Hey",
-        "Hooray",
-        "Darn",
-        "Ugh",
-        "Phew",
-        "Ouch",
-        "Gee",
-        "Aha",
-        "Bravo",
-        "Eek",
-        "Ah",
-        "Hmm"
+        "wow",
+        "oh",
+        "oops",
+        "yikes",
+        "hey",
+        "hooray",
+        "darn",
+        "ugh",
+        "phew",
+        "ouch",
+        "gee",
+        "aha",
+        "bravo",
+        "eek",
+        "ah",
+        "hmm"
       ],
 
       "determiners": [
