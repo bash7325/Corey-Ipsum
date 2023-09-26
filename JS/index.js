@@ -39,6 +39,8 @@ function getSentences() {
         sentence.push(coreyText.conjunctions[Math.floor(Math.random() * coreyText.conjunctions.length)]);
         sentence.push(coreyText.nouns[Math.floor(Math.random() * coreyText.nouns.length)]);
         sentence.push(coreyText.prepositions[Math.floor(Math.random() * coreyText.prepositions.length)]);
+        sentence.push(coreyText.interjections[Math.floor(Math.random() * coreyText.interjections.length)]);
+        sentence.push(coreyText.determiners[Math.floor(Math.random() * coreyText.determiners.length)]);
         sentence.push(coreyText.corey[Math.floor(Math.random() * coreyText.corey.length)]);
         sentences.push(sentence);
     }
