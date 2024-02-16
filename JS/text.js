@@ -628,7 +628,13 @@ let coreyText =
         "blame Cheney",
         "web dev 0.5",
         "princess Benny",
-        "taking the family to Chili's"
+        "taking the family to Chili's",
+        "did you try making it work",
+        "steal Ashby's wheels",
+        "14 beers at Chili's",
+        "tea time",
+        "bagging",
+        "tea bag"
         ]
 }
 
