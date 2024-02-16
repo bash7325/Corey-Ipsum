@@ -28,39 +28,50 @@ numOfSent.addEventListener("input", syncSentNumbers);
 numOfSentRange.addEventListener("input", syncSentNumbers);
 
 //get a noun, a verb, another noun, a preposition and a corey word from coreyText and add push to an array
+const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const sentenceTemplates = [
+    "{noun} {verb} {corey} {preposition} {noun}.",
+    "{interjection}! {corey} {verb} {noun}.",
+    "{noun} {verb} {corey} {conjunction} {noun} {verb} {noun}.",
+    "{determiner} {corey} {verb} {preposition} {noun}.",
+    "{noun} {verb} {corey}."
+];
+
 function getSentences() {
-    let sentences = [];
+    let sentences = new Set();
     let sentenceAmount = getSliderValue();
-    for (let i = 0; i < sentenceAmount; i++) {
-        let sentence = [];
-        sentence.push(coreyText.nouns[Math.floor(Math.random() * coreyText.nouns.length)]);
-        sentence.push(coreyText.corey[Math.floor(Math.random() * coreyText.corey.length)]);
-        sentence.push(coreyText.verbs[Math.floor(Math.random() * coreyText.verbs.length)]);
-        sentence.push(coreyText.conjunctions[Math.floor(Math.random() * coreyText.conjunctions.length)]);
-        sentence.push(coreyText.nouns[Math.floor(Math.random() * coreyText.nouns.length)]);
-        sentence.push(coreyText.prepositions[Math.floor(Math.random() * coreyText.prepositions.length)]);
-        sentence.push(coreyText.interjections[Math.floor(Math.random() * coreyText.interjections.length)]);
-        sentence.push(coreyText.determiners[Math.floor(Math.random() * coreyText.determiners.length)]);
-        sentence.push(coreyText.corey[Math.floor(Math.random() * coreyText.corey.length)]);
-        sentences.push(sentence);
+    while(sentences.size < sentenceAmount) {
+        let usedWords = new Set();
+        let getUniqueRandomElement = (arr) => {
+            let word;
+            do {
+                word = getRandomElement(arr);
+            } while (usedWords.has(word));
+            usedWords.add(word);
+            return word;
+        };
+        let template = getRandomElement(sentenceTemplates);
+        let sentence = template
+            .replace(/{noun}/g, () => getUniqueRandomElement(coreyText.nouns))
+            .replace(/{verb}/g, () => getUniqueRandomElement(coreyText.verbs))
+            .replace(/{preposition}/g, () => getUniqueRandomElement(coreyText.prepositions))
+            .replace(/{interjection}/g, () => getUniqueRandomElement(coreyText.interjections))
+            .replace(/{determiner}/g, () => getUniqueRandomElement(coreyText.determiners))
+            .replace(/{corey}/g, () => getUniqueRandomElement(coreyText.corey))
+            .replace(/{conjunction}/g, () => getUniqueRandomElement(coreyText.conjunctions));
+        sentences.add(sentence.charAt(0).toUpperCase() + sentence.slice(1));
     }
-    return sentences;
+    return Array.from(sentences);
 }
 
-//create the amount of sentences according to the slider value, but don't repeat the same sentence twice
 function createSentences() {
     let sentences = getSentences();
     let sentenceAmount = getSliderValue();
     let ipsumText = '';
     for (let i = 0; i < sentenceAmount; i++) {
-        let sentence = sentences[Math.floor(Math.random() * sentences.length)];
-        //if the sentence is already in the ipsumText, don't add it again
-        if (ipsumText.includes(sentence.join(' '))) {
-            sentenceAmount++;
-        } else {
-        sentence[0] = sentence[0].charAt(0).toUpperCase() + sentence[0].slice(1);
-        ipsumText += sentence.join(' ') + '. ';
-        }
+        let sentence = sentences[i];
+        ipsumText += sentence + ' ';
     }
     return ipsumText;
 }
@@ -99,3 +110,40 @@ darkMode.addEventListener('click', function () {
     }
 })
 
+// Get the modal
+var aboutModal = document.getElementById("aboutModal");
+var contactModal = document.getElementById("contactModal");
+
+// Get the button that opens the modal
+var aboutBtn = document.getElementById("aboutBtn");
+var contactBtn = document.getElementById("contactBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal 
+aboutBtn.onclick = function() {
+  aboutModal.style.display = "block";
+}
+
+contactBtn.onclick = function() {
+  contactModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+for (let i = 0; i < span.length; i++) {
+  span[i].onclick = function() {
+    aboutModal.style.display = "none";
+    contactModal.style.display = "none";
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == aboutModal) {
+    aboutModal.style.display = "none";
+  }
+  if (event.target == contactModal) {
+    contactModal.style.display = "none";
+  }
+}

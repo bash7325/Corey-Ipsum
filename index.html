@@ -13,13 +13,13 @@
 </head>
 
 <body>
-<nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Corey</a></li>
-    <li><a href="#">Contact Corey's Mom</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="#" id="homeBtn">Home</a></li>
+      <li><a href="#" id="aboutBtn">About Corey</a></li>
+      <li><a href="#" id="contactBtn">Contact Corey's Mom</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
     <div class="row">
@@ -30,21 +30,55 @@
     </div>
     <div class="row">
       <div class="twelve columns">
-        <label for="sentences">Sentences</label>
-        <input type="range" min="1" max="20" value="1" class="slider" id="sentences">
-        <input type="number" min="1" max="20" value="1" id="number_of_sent" />
-        <button class="button-primary" id="generate">Generate</button>
+        <fieldset>
+          <legend>Generate Some Corey Sentences</legend>
+          <label for="sentences">Sentence Amount:</label>
+          <input type="range" min="1" max="20" value="1" class="slider" id="sentences">
+          <input type="number" min="1" max="20" value="1" id="number_of_sent" placeholder="Number of sentences" />
+          <button class="button-primary" id="generate">Generate</button>
+        </fieldset>
       </div>
     </div>
     <div class="row">
       <div class="twelve columns">
-        <p id="ipsum_text"></p>
-        <button class="button-primary" id="copy">Copy</button>
+        <fieldset>
+          <legend>Generated Corey Text:</legend>
+          <p id="ipsum_text"></p>
+          <button class="button-primary" id="copy">Copy</button>
+        </fieldset>
       </div>
     </div>
     <div class="twelve columns">
       <button id="dark_mode">Dark Mode</button>
     </div>
+  </div>
+  <footer>
+    <p>© 2024 Corey Ipsum</p>
+  </footer>
+
+  <!-- About Corey Modal -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>About Corey</h2>
+    <p>Corey is a web developer. He is kind of a sad Eeyore-like guy. He loves all mothers, especially Ian's, and he enjoys drinking 14 beers at Chili's restaurant. He likes to insult his friend Benny, who is a pink peripheral enthusiast, and he often gets yelled at by his boss Sheldon, who is an AI. Corey is a unique and quirky person who likes to express himself through his work and his hobbies</p>
+  </div>
+</div>
+
+<!-- Contact Corey's Mom Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Contact Corey's Mom</h2>
+    <form>
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Your Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
 </body>
 <!-- link to index.js -->
 <script src="JS/index.js"></script>
