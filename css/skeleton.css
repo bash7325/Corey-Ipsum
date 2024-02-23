@@ -502,6 +502,20 @@ nav a:hover {
   cursor: pointer;
 }
 
+.dark_mode .modal-content {
+  background-color: #333; 
+  color: #fff; 
+}
+
+.dark_mode .close {
+  color: #fff; 
+}
+
+.dark_mode .close:hover,
+.dark_mode .close:focus {
+  color: #aaa; 
+}
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
