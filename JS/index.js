@@ -31,11 +31,23 @@ numOfSentRange.addEventListener("input", syncSentNumbers);
 const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 const sentenceTemplates = [
-    "{noun} {verb} {corey} {preposition} {noun}.",
-    "{interjection}! {corey} {verb} {noun}.",
-    "{noun} {verb} {corey} {conjunction} {noun} {verb} {noun}.",
-    "{determiner} {corey} {verb} {preposition} {noun}.",
-    "{noun} {verb} {corey}."
+  "{noun} {verb} {corey} {preposition} {noun}.",
+  "{interjection}! {corey} {verb} {noun}.",
+  "{noun} {verb} {corey} {conjunction} {noun} {verb} {noun}.",
+  "{determiner} {corey} {verb} {preposition} {noun}.",
+  "{noun} {verb} {corey}.",
+  "{corey} {verb} {noun} {conjunction} {noun} {verb}.",
+  "{interjection}! {noun} {verb} {corey} {conjunction} {noun}.",
+  "{noun} {verb} {corey} {preposition} {noun} {conjunction} {noun} {verb}.",
+  "{determiner} {noun} {verb} {corey} {conjunction} {noun} {verb}.",
+  "{corey} {verb} {noun} {conjunction} {noun} {verb} {preposition} {noun}.",
+  "{noun} {verb} {corey} {conjunction} {noun} {verb} {preposition} {noun}.",
+  "{interjection}! {noun} {verb} {corey} {conjunction} {noun} {verb}.",
+  "{determiner} {noun} {verb} {corey} {preposition} {noun} {conjunction} {noun}.",
+  "{corey} {verb} {noun} {conjunction} {noun} {verb} {preposition} {noun} {conjunction} {noun}.",
+  "{noun} {verb} {corey} {conjunction} {noun} {verb} {preposition} {noun} {conjunction} {noun} {verb}.",
+  "{interjection}! {noun} {verb} {corey} {conjunction} {noun} {verb} {preposition} {noun}.",
+  "{determiner} {noun} {verb} {corey} {conjunction} {noun} {verb} {preposition} {noun} {conjunction} {noun}.",
 ];
 
 function getSentences() {
