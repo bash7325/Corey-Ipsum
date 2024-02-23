@@ -78,10 +78,12 @@ function createSentences() {
 
 //function for generate button
 function generateBtn() {
-    text.textContent = createSentences();
-    document.getElementById('copy').style.display = 'block';
-    copy.textContent = 'Copy';
-    container.appendChild(img);
+  let sentences = createSentences();
+  text.textContent = sentences;
+  typeEffect(text, 5); // adjust speed aof the typing text with this
+  document.getElementById('copy').style.display = 'block';
+  copy.textContent = 'Copy';
+  container.appendChild(img);
 }
 
 //on click of btn createSentences
@@ -123,27 +125,43 @@ var span = document.getElementsByClassName("close");
 
 // When the user clicks the button, open the modal 
 aboutBtn.onclick = function() {
-  aboutModal.style.display = "block";
+  aboutModal.classList.add('open');
 }
 
 contactBtn.onclick = function() {
-  contactModal.style.display = "block";
+  contactModal.classList.add('open');
 }
 
 // When the user clicks on <span> (x), close the modal
 for (let i = 0; i < span.length; i++) {
   span[i].onclick = function() {
-    aboutModal.style.display = "none";
-    contactModal.style.display = "none";
+    aboutModal.classList.remove('open');
+    contactModal.classList.remove('open');
   }
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == aboutModal) {
-    aboutModal.style.display = "none";
+    aboutModal.classList.remove('open');
   }
   if (event.target == contactModal) {
-    contactModal.style.display = "none";
+    contactModal.classList.remove('open');
   }
+}
+
+//typing effect
+function typeEffect(element, speed) {
+  let text = element.textContent;
+  element.textContent = "";
+
+  let i = 0;
+  let timer = setInterval(function() {
+      if (i < text.length) {
+          element.append(text.charAt(i));
+          i++;
+      } else {
+          clearInterval(timer);
+      }
+  }, speed);
 }
