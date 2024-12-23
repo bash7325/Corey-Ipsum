@@ -7,6 +7,7 @@ const numOfSentRange = document.getElementById("sentences");
 const copy = document.getElementById('copy');
 const container = document.querySelector('.container');
 const darkMode = document.querySelector('#dark_mode');
+const nsfw = document.getElementById("nsfw");
 var img = document.createElement("img");
 img.src = "images/corey.png";
 img.className  = "corey_img";
@@ -26,6 +27,15 @@ function syncSentNumbers(e) {
 //sync the slider with the text box next to it
 numOfSent.addEventListener("input", syncSentNumbers);
 numOfSentRange.addEventListener("input", syncSentNumbers);
+
+//nsfw checkbox listener
+nsfw.addEventListener('change', function() {
+    if (this.checked) {
+      this.value = "Y"
+    } else {
+      this.value = "N"
+    }
+  });
 
 //get a noun, a verb, another noun, a preposition and a corey word from coreyText and add push to an array
 const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -64,8 +74,9 @@ function getSentences() {
             return word;
         };
         let template = getRandomElement(sentenceTemplates);
+        let nouns = [...coreyText.nouns] + nsfw == "Y"? [...coreyText.nouns-nsfw] : [] ;
         let sentence = template
-            .replace(/{noun}/g, () => getUniqueRandomElement(coreyText.nouns))
+            .replace(/{noun}/g, () => getUniqueRandomElement(nouns))
             .replace(/{verb}/g, () => getUniqueRandomElement(coreyText.verbs))
             .replace(/{preposition}/g, () => getUniqueRandomElement(coreyText.prepositions))
             .replace(/{interjection}/g, () => getUniqueRandomElement(coreyText.interjections))
