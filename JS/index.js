@@ -74,7 +74,8 @@ function getSentences() {
             return word;
         };
         let template = getRandomElement(sentenceTemplates);
-        let nouns = [...coreyText.nouns] + nsfw == "Y"? [...coreyText.nouns-nsfw] : [] ;
+        let nouns = [...coreyText.nouns] ;
+        if (nsfw.value == "Y") nouns = [...nouns, ...coreyText["nouns-nsfw"]];
         let sentence = template
             .replace(/{noun}/g, () => getUniqueRandomElement(nouns))
             .replace(/{verb}/g, () => getUniqueRandomElement(coreyText.verbs))
