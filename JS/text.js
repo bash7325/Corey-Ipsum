@@ -2,30 +2,6 @@
 let coreyText =
 {
     "nouns": [
-        "Ian's office",
-        "fish closet",
-        "snack closet",
-        "strawberry mouse",
-        "gold wheels",
-        "Benny's pink keyboard",
-        "spider plant",
-        "butter",
-        "bread",
-        "Justice Works swamp",
-        "Maverick",
-        "Downtown Justice Works",
-        "Bill Gate's keyboard",
-        "Chad's desk",
-        "Cheney's desk",
-        "Ian's desk",
-        "Benny's desk",
-        "Ashby's desk",
-        "Jake's desk",
-        "Abe's desk",
-        "Colleen's desk",
-        "noise canceling headphones",
-        "shoe noodles",
-        "microwaved shoes",
         "sadness",
         "grief",
         "sorrow",
@@ -89,8 +65,34 @@ let coreyText =
         "Butters",
         "Picante Alex",
         "Landon",
-        "Thug daddy nasty",
-        "ultrawide monitor"
+        "ultrawide monitor",
+        "Ian's office",
+        "fish closet",
+        "snack closet",
+        "strawberry mouse",
+        "gold wheels",
+        "Benny's pink keyboard",
+        "spider plant",
+        "butter",
+        "bread",
+        "Justice Works swamp",
+        "Maverick",
+        "Downtown Justice Works",
+        "Bill Gate's keyboard",
+        "Chad's desk",
+        "Cheney's desk",
+        "Ian's desk",
+        "Benny's desk",
+        "Ashby's desk",
+        "Jake's desk",
+        "Abe's desk",
+        "Colleen's desk",
+        "noise canceling headphones",
+        "shoe noodles",
+        "microwaved shoes"
+    ],
+    "nouns-nsfw":[
+        "Thug daddy nasty"
     ],
     "verbs": [
         "whine",
@@ -136,7 +138,7 @@ let coreyText =
         "sound off",
         "clamor",
         "chide"
-        
+
     ],
     "adjectives": [
         "sad",
@@ -300,7 +302,7 @@ let coreyText =
         "each other",
         "one's self",
         "oneself"
-        
+
     ],
     "prepositions": [
         "about",
@@ -443,9 +445,9 @@ let coreyText =
         "jeez",
         "oh lord",
         "oh heavens"
-      ],
+    ],
 
-      "determiners": [
+    "determiners": [
         "the",
         "a",
         "an",
@@ -476,9 +478,9 @@ let coreyText =
         "most",
         "much",
         "little"
-      ],
-        
-    "corey": [    
+    ],
+
+    "corey": [
         "works on my machine",
         "Ian did 80 percent",
         "told me to do it",
@@ -505,13 +507,11 @@ let coreyText =
         "complaint",
         "attribution",
         "accusation",
-        "your mom",
         "bitters",
         "it’s too cold outside",
         "copy paste",
         "moldy bread",
         "toilet brush",
-        "deez nuts",
         "Megan Fox",
         "parking close to Ian",
         "oh bother",
@@ -538,7 +538,6 @@ let coreyText =
         "gushers",
         "problem for future Corey",
         "it's probably like that everywhere",
-        "Ian's mom",
         "Meg",
         "I only walk when it's 72-79 degrees outside",
         "did you try fixing it",
@@ -561,13 +560,17 @@ let coreyText =
         "taking the family to Chili's",
         "did you try making it work",
         "steal Ashby's wheels",
-        "14 beers at Chili's",
         "tea time",
-        "bagging",
-        "tea bag",
         "must be nice",
         "well well well"
-        ]
+    ],
+    "corey-nsfw":[
+        "Ian's mom",
+        "bagging",
+        "tea bag",
+        "deez nuts",
+        "your mom",
+        "14 beers at Chili's"
+    ]
+    
 }
-
-
