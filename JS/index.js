@@ -106,9 +106,12 @@ function createSentences() {
 
 //function for generate button
 function generateBtn() {
-  let sentences = createSentences();
-  text.textContent = sentences;
-  typeEffect(text, 5); // adjust speed aof the typing text with this
+    if(!text.textContent) container.appendChild(img);
+    else document.getElementById('copy').style.display = 'none';
+    
+    let sentences = createSentences();
+    text.textContent = sentences;
+    typeEffect(text, 5); // adjust speed aof the typing text with this
 }
 
 //on click of btn createSentences
@@ -192,7 +195,6 @@ function typeEffect(element, speed) {
           clearInterval(timer);
           document.getElementById('copy').style.display = 'block';
           copy.textContent = 'Copy';
-          container.appendChild(img);
       }
   }, speed);
 }
