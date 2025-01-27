@@ -193,7 +193,7 @@ function typeEffect(element, speed) {
           i+=4;
       } else {
           clearInterval(timer);
-          document.getElementById('copy').style.display = 'block';
+          document.getElementById('copy').style.display = 'inline-block';
           copy.textContent = 'Copy';
       }
   }, speed);
