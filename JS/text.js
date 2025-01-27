@@ -566,7 +566,9 @@ let coreyText =
         "DSO",
         "Being mean to Ashby in OW",
         "Chad is my team lead",
-        "Sounds like a personal problem"
+        "Sounds like a personal problem",
+        "showing up to work at 10:30am",
+        "go to Chili's for some triple dippers"
     ],
     "corey-nsfw":[
         "Ian's mom",
@@ -577,7 +579,8 @@ let coreyText =
         "14 beers at Chili's",
         "Did your Mom",
         "no pants",
-        "last night with your mom"
+        "last night with your mom",
+        "going on a man date with Benny"
     ]
     
 }
