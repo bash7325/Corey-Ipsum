@@ -75,14 +75,18 @@ function getSentences() {
         };
         let template = getRandomElement(sentenceTemplates);
         let nouns = [...coreyText.nouns] ;
-        if (nsfw.value == "Y") nouns = [...nouns, ...coreyText["nouns-nsfw"]];
+        let corey = [...coreyText.corey] ;
+        if (nsfw.value == "Y") {
+            nouns = [...nouns, ...coreyText["nouns-nsfw"]];
+            corey = [...corey, ...coreyText["corey-nsfw"]];
+        }
         let sentence = template
             .replace(/{noun}/g, () => getUniqueRandomElement(nouns))
             .replace(/{verb}/g, () => getUniqueRandomElement(coreyText.verbs))
             .replace(/{preposition}/g, () => getUniqueRandomElement(coreyText.prepositions))
             .replace(/{interjection}/g, () => getUniqueRandomElement(coreyText.interjections))
             .replace(/{determiner}/g, () => getUniqueRandomElement(coreyText.determiners))
-            .replace(/{corey}/g, () => getUniqueRandomElement(coreyText.corey))
+            .replace(/{corey}/g, () => getUniqueRandomElement(corey))
             .replace(/{conjunction}/g, () => getUniqueRandomElement(coreyText.conjunctions));
         sentences.add(sentence.charAt(0).toUpperCase() + sentence.slice(1));
     }
