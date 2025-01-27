@@ -562,7 +562,11 @@ let coreyText =
         "steal Ashby's wheels",
         "tea time",
         "must be nice",
-        "well well well"
+        "well well well",
+        "DSO",
+        "Being mean to Ashby in OW",
+        "Chad is my team lead",
+        "Sounds like a personal problem"
     ],
     "corey-nsfw":[
         "Ian's mom",
@@ -570,7 +574,10 @@ let coreyText =
         "tea bag",
         "deez nuts",
         "your mom",
-        "14 beers at Chili's"
+        "14 beers at Chili's",
+        "Did your Mom",
+        "no pants",
+        "last night with your mom"
     ]
     
 }
