@@ -449,7 +449,11 @@ nav a:hover {
 }
 
 .corey_img{
-  animation: bounceRotate 5s linear infinite;
+  animation: bounceRotate 10s linear infinite;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /* Animations
@@ -460,7 +464,7 @@ nav a:hover {
     transform: translateX(0) rotate(0deg);
   }
   50% {
-    transform: translateX(75vw) rotate(180deg);
+    transform: translateX(50vw) rotate(180deg);
   }
   100% {
     transform: translateX(0) rotate(360deg);
