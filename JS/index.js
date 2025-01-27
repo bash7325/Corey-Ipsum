@@ -109,9 +109,6 @@ function generateBtn() {
   let sentences = createSentences();
   text.textContent = sentences;
   typeEffect(text, 5); // adjust speed aof the typing text with this
-  document.getElementById('copy').style.display = 'block';
-  copy.textContent = 'Copy';
-  container.appendChild(img);
 }
 
 //on click of btn createSentences
@@ -187,9 +184,15 @@ function typeEffect(element, speed) {
   let timer = setInterval(function() {
       if (i < text.length) {
           element.append(text.charAt(i));
-          i++;
+          element.append(text.charAt(i + 1));
+          element.append(text.charAt(i + 2));
+          element.append(text.charAt(i + 3));
+          i+=4;
       } else {
           clearInterval(timer);
+          document.getElementById('copy').style.display = 'block';
+          copy.textContent = 'Copy';
+          container.appendChild(img);
       }
   }, speed);
 }
