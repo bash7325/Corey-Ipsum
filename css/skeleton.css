@@ -450,10 +450,16 @@ nav a:hover {
 
 .corey_img{
   animation: bounceRotate 10s linear infinite;
-  top: 50%;
+  bottom: -15%;
   left: 0;
   position: absolute;
   z-index: -1;
+  height: 15vh;
+}
+p#ipsum_text {
+    height: 29vh;
+    overflow-y: auto;
+    margin-bottom: 0;
 }
 
 /* Animations
