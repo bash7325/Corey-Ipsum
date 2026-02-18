@@ -27,7 +27,7 @@ let coreyText =
         "heaviness",
         "melancholia",
         "blue",
-        "grief-stricken",
+        "grief-strickeness",
         "downheartedness",
         "loneliness",
         "sorrowfulness",
@@ -92,7 +92,11 @@ let coreyText =
         "microwaved shoes"
     ],
     "nouns-nsfw":[
-        "Thug daddy nasty"
+        "Thug daddy nasty",
+        "balls",
+        "shit",
+        "shitter",
+        "ass"
     ],
     "verbs": [
         "whine",
@@ -139,6 +143,11 @@ let coreyText =
         "clamor",
         "chide"
 
+    ],
+    "verbs-nsfw":[
+        "pound",
+        "fuck",
+        "teabag"
     ],
     "adjectives": [
         "sad",
@@ -191,6 +200,12 @@ let coreyText =
         "anguished",
         "heavyhearted"
     ],
+    "adjectives-nsfw": [
+        "shitty",
+        "shittier",
+        "shittiest",
+        "ass"
+    ]
 
     "pronouns": [
         "I",
@@ -575,12 +590,15 @@ let coreyText =
         "bagging",
         "tea bag",
         "deez nuts",
-        "your mom",
+        "your mum",
         "14 beers at Chili's",
         "Did your Mom",
         "no pants",
         "last night with your mom",
-        "going on a man date with Benny"
+        "going on a man date with Benny",
+        "you just got pounded",
+        "thanks for the bags"
     ]
     
 }
+
