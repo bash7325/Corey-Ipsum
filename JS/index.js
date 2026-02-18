@@ -75,14 +75,18 @@ function getSentences() {
         };
         let template = getRandomElement(sentenceTemplates);
         let nouns = [...coreyText.nouns] ;
+        let verbs = [...coreyText.verbs] ;
+        let adjectives = [...coreyText.adjectives] ;
         let corey = [...coreyText.corey] ;
         if (nsfw.value == "Y") {
             nouns = [...nouns, ...coreyText["nouns-nsfw"]];
+            verbs = [...verbs, ...coreyText["verbs-nsfw"]];
+            adjectives = [...adjectives, ...coreyText["adjectives-nsfw"]];
             corey = [...corey, ...coreyText["corey-nsfw"]];
         }
         let sentence = template
             .replace(/{noun}/g, () => getUniqueRandomElement(nouns))
-            .replace(/{verb}/g, () => getUniqueRandomElement(coreyText.verbs))
+            .replace(/{verb}/g, () => getUniqueRandomElement(verbs))
             .replace(/{preposition}/g, () => getUniqueRandomElement(coreyText.prepositions))
             .replace(/{interjection}/g, () => getUniqueRandomElement(coreyText.interjections))
             .replace(/{determiner}/g, () => getUniqueRandomElement(coreyText.determiners))
@@ -198,3 +202,4 @@ function typeEffect(element, speed) {
       }
   }, speed);
 }
+
