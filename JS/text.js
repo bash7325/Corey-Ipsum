@@ -205,7 +205,7 @@ let coreyText =
         "shittier",
         "shittiest",
         "ass"
-    ]
+    ],
 
     "pronouns": [
         "I",
@@ -601,4 +601,5 @@ let coreyText =
     ]
     
 }
+
 
